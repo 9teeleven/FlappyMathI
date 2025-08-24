@@ -93,101 +93,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // BANK SOAL
      let questionBank = [
-    {
-        q: "Bentuk sederhana dari <strong>a<sup>5</sup> &times; a<sup>2</sup></strong> adalah...",
-        o: ["a<sup>10</sup>", "a<sup>3</sup>", "2a<sup>7</sup>", "a<sup>7</sup>"],
-        a: "a<sup>7</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>(x<sup>4</sup>)<sup>3</sup></strong> adalah...",
-        o: ["x<sup>7</sup>", "x", "x<sup>12</sup>", "4x<sup>3</sup>"],
-        a: "x<sup>12</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>b<sup>9</sup> &divide; b<sup>3</sup></strong> adalah...",
-        o: ["b<sup>3</sup>", "b<sup>12</sup>", "b<sup>6</sup>", "b<sup>27</sup>"],
-        a: "b<sup>6</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>(2m<sup>3</sup>)<sup>4</sup></strong> adalah...",
-        o: ["8m<sup>7</sup>", "16m<sup>12</sup>", "8m<sup>12</sup>", "16m<sup>7</sup>"],
-        a: "16m<sup>12</sup>"
-    },
-    {
-        q: "Hasil dari <strong>(7p<sup>2</sup>q)<sup>0</sup></strong> untuk p&ne;0 dan q&ne;0 adalah...",
-        o: ["0", "7", "7pq", "1"],
-        a: "1"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>y<sup>-5</sup></strong> adalah...",
-        o: ["-5y", "5y", "1/y<sup>5</sup>", "-y<sup>5</sup>"],
-        a: "1/y<sup>5</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>(a<sup>3</sup>b<sup>2</sup>) &times; (a<sup>2</sup>b<sup>4</sup>)</strong> adalah...",
-        o: ["a<sup>5</sup>b<sup>6</sup>", "a<sup>6</sup>b<sup>8</sup>", "a<sup>5</sup>b<sup>8</sup>", "a<sup>6</sup>b<sup>6</sup>"],
-        a: "a<sup>5</sup>b<sup>6</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>(15x<sup>5</sup>y<sup>3</sup>) &divide; (3x<sup>2</sup>y)</strong> adalah...",
-        o: ["5x<sup>3</sup>y<sup>2</sup>", "5x<sup>7</sup>y<sup>4</sup>", "12x<sup>3</sup>y<sup>2</sup>", "5x<sup>3</sup>y<sup>3</sup>"],
-        a: "5x<sup>3</sup>y<sup>2</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>(k<sup>-3</sup>)<sup>5</sup></strong> adalah...",
-        o: ["k<sup>2</sup>", "k<sup>-15</sup>", "k<sup>-8</sup>", "k<sup>15</sup>"],
-        a: "k<sup>-15</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>c<sup>-6</sup> &times; c<sup>2</sup></strong> adalah...",
-        o: ["c<sup>-12</sup>", "c<sup>4</sup>", "c<sup>-8</sup>", "c<sup>-4</sup>"],
-        a: "c<sup>-4</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>(&frac13;x<sup>2</sup>y)<sup>2</sup></strong> adalah...",
-        o: ["&frac19;x<sup>4</sup>y<sup>2</sup>", "&frac16;x<sup>4</sup>y<sup>2</sup>", "&frac19;x<sup>2</sup>y", "x<sup>4</sup>y<sup>2</sup>"],
-        a: "&frac19;x<sup>4</sup>y<sup>2</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>((p<sup>2</sup>)<sup>5</sup>) &divide; p<sup>3</sup></strong> adalah...",
-        o: ["p<sup>4</sup>", "p<sup>7</sup>", "p<sup>13</sup>", "p<sup>30</sup>"],
-        a: "p<sup>7</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>(2a<sup>-3</sup>b<sup>2</sup>)<sup>-2</sup></strong> adalah...",
-        o: ["-4a<sup>6</sup>b<sup>-4</sup>", "&frac14;a<sup>6</sup>b<sup>-4</sup>", "4a<sup>6</sup>b<sup>-4</sup>", "&frac14;a<sup>-5</sup>b<sup>0</sup>"],
-        a: "&frac14;a<sup>6</sup>b<sup>-4</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>y<sup>2</sup> &times; (y<sup>3</sup>)<sup>2</sup></strong> adalah...",
-        o: ["y<sup>7</sup>", "y<sup>8</sup>", "y<sup>10</sup>", "y<sup>12</sup>"],
-        a: "y<sup>8</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>(m<sup>4</sup>n<sup>2</sup>p) &divide; (m<sup>4</sup>n)</strong> adalah...",
-        o: ["np", "mp", "n<sup>2</sup>p", "mnp"],
-        a: "np"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>(a<sup>-2</sup>b<sup>3</sup>)<sup>3</sup></strong> adalah...",
-        o: ["a<sup>-5</sup>b<sup>6</sup>", "a<sup>-6</sup>b<sup>9</sup>", "a<sup>1</sup>b<sup>6</sup>", "ab<sup>9</sup>"],
-        a: "a<sup>-6</sup>b<sup>9</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>(x<sup>3</sup> &divide; x<sup>6</sup>)<sup>-2</sup></strong> adalah...",
-        o: ["x<sup>-6</sup>", "x<sup>-5</sup>", "x<sup>9</sup>", "x<sup>6</sup>"],
-        a: "x<sup>6</sup>"
-    },
-    {
-        q: "Bentuk sederhana dari <strong>(3y)<sup>2</sup> &times; 2y<sup>3</sup></strong> adalah...",
-        o: ["6y<sup>5</sup>", "18y<sup>6</sup>", "18y<sup>5</sup>", "6y<sup>6</sup>"],
-        a: "18y<sup>5</sup>"
-    },
-    {
-        q: "Hasil dari <strong>(5p<sup>3</sup>)<sup>2</sup> &divide; 5p<sup>4</sup></strong> adalah...",
-        o: ["5p<sup>2</sup>", "1p<sup>2</sup>", "5p<sup>4</sup>", "25p<sup>2</sup>"],
-        a: "5p<sup>2</sup>"
-    }
+    { q: "2 × 3", o: [5, 6, 7, 8], a: 6 },
+    { q: "8 ÷ 4", o: [1, 2, 3, 4], a: 2 },
+    { q: "7 × 5", o: [30, 35, 40, 25], a: 35 },
+    { q: "9 ÷ 3", o: [1, 2, 3, 4], a: 3 },
+    { q: "4 × 6", o: [20, 22, 24, 26], a: 24 },
+    { q: "10 ÷ 2", o: [2, 4, 5, 6], a: 5 },
+    { q: "3 × 8", o: [22, 23, 24, 25], a: 24 },
+    { q: "12 ÷ 6", o: [1, 2, 3, 4], a: 2 },
+    { q: "5 × 9", o: [40, 45, 50, 55], a: 45 },
+    { q: "16 ÷ 8", o: [1, 2, 3, 4], a: 2 },
+    { q: "7 × 4", o: [26, 27, 28, 29], a: 28 },
+    { q: "18 ÷ 3", o: [5, 6, 7, 8], a: 6 },
+    { q: "6 × 6", o: [32, 34, 35, 36], a: 36 },
+    { q: "20 ÷ 5", o: [2, 3, 4, 5], a: 4 },
+    { q: "8 × 8", o: [62, 63, 64, 65], a: 64 },
+    { q: "24 ÷ 4", o: [4, 5, 6, 7], a: 6 },
+    { q: "9 × 3", o: [26, 27, 28, 29], a: 27 },
+    { q: "21 ÷ 7", o: [2, 3, 4, 5], a: 3 },
+    { q: "10 × 2", o: [18, 19, 20, 21], a: 20 },
+    { q: "15 ÷ 3", o: [3, 4, 5, 6], a: 5 },
+    { q: "2 × 9", o: [16, 17, 18, 19], a: 18 },
+    { q: "14 ÷ 2", o: [6, 7, 8, 9], a: 7 },
+    { q: "3 × 7", o: [20, 21, 22, 23], a: 21 },
+    { q: "27 ÷ 9", o: [2, 3, 4, 5], a: 3 },
+    { q: "4 × 9", o: [35, 36, 37, 38], a: 36 },
+    { q: "30 ÷ 6", o: [4, 5, 6, 7], a: 5 },
+    { q: "2 × 10", o: [18, 19, 20, 21], a: 20 },
+    { q: "25 ÷ 5", o: [4, 5, 6, 7], a: 5 },
+    { q: "7 × 6", o: [40, 41, 42, 43], a: 42 },
+    { q: "28 ÷ 7", o: [3, 4, 5, 6], a: 4 }
 ];
     let shuffledQuestions = [];
     let currentQuestionIndex = 0;
@@ -441,6 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
         questionContainer.style.display = 'block';
     });
 });
+
 
 
 

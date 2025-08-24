@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Pon</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="loadingScreen"><h2>Memuat Aset...</h2></div>
+        
+        <div id="homeScreen">
+            <h1>Flappy Pon</h1>
+            <img src="assets/instructions.png" alt="Cara Bermain Flappy Pon" style="max-width: 60%;">
+            <button id="startButton" class="button">Mulai</button>
+            <p>Game by: Irvan Ardianto</p>
+        </div>
+        
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="scoreDisplay" style="display: none;">0</div>
+        
+        <div id="startMessage">Tap untuk Mulai!</div>
+
+        <button id="endGameButton" class="button" style="display: none;">Akhiri</button>
+        
+        <div id="scorePanel" style="display: none;">
+            <div class="score-content">
+                <img id="medalImage" src="" alt="Medali">
+                <div id="finalScore">0</div>
+                <div id="highScorePanel">0</div>
+                <button id="restartButton" class="button">Ulangi</button>
+            </div>
+        </div>
+
+        <div id="mathModal">
+            <div class="modal-content">
+                <div id="challengeIntro">
+                    <h2>Tantangan!</h2>
+                    <p>Jawab soal dengan benar untuk melanjutkan skormu!</p>
+                    <button id="showQuestionButton" class="button">Lihat Soal</button>
+                </div>
+                <div id="questionContainer" style="display: none;">
+                    <h2>Tantangan!</h2>
+                    <div id="question"></div>
+                    <div id="answerOptions"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
